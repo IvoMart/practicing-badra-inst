@@ -132,5 +132,15 @@ const verFibonacci = () => {
  /// Ejercicio 9: Invertir una cadena 
  // Escribe un programa que invierta una cadena de texto ingresada por el usuario.
  
+const textoInvertido = () => {
+   const invertirTexto = (texto) => {
+      return texto.split('').reverse().join('');
+   }
+
+   let versos = prompt("Ingresar un texto a continuación. El texto que será invertido y se mostrará en la consola.")
+   
+   console.warn(`Texto invertido de ${versos} es: \r\t ${invertirTexto(versos)}`)
+}
+
  /// Ejercicio 10: Suma de dígitos 
  // Escribe un programa que sume los dígitos de un número entero ingresado por el usuario.
