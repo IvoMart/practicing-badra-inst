@@ -66,6 +66,25 @@ const hallarFactorial = () => {
  /// Ejercicio 6: Contar vocales en una cadena 
  // Escribe un programa que cuente el número de vocales en una cadena ingresada por el usuario.
  
+const contarVocales = () => {
+   const vocalesEnTexto = (texto) => {
+      const vocales = 'aeiouAEIOU';
+      let contador = 0;
+      
+      for (let i = 0; i < texto.length; i++) {
+         if (vocales.includes(texto[i])) {
+            contador++;
+         }
+      }
+      
+      return contador;
+   }
+
+   let versos = prompt("Ingresar un texto a continuación. Se contarán las vocales.")
+
+   console.warn(`El texto ingresado ${versos} tiene ${vocalesEnTexto(versos)} vocales.`)
+} 
+
  /// Ejercicio 7: Numeros primos 
  // Escribe un programa que determine si un número ingresado por el usuario es primo.
  
