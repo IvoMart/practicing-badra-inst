@@ -5,6 +5,15 @@ const ecribeConsola = ()=> console.log('Hola Mundo')
  /// Ejercicio 2: Suma de dos números 
  // Escribe un programa que solicite al usuario dos números y los sume.
 
+const realizaSuma = () => {
+   const sumar = (num1, num2 ) => {
+      return num1 + num2
+   }
+   let num1 = parseInt(prompt("ingrese el primer número de la suma a continiación: "))
+   let num2 = parseInt(prompt("ingrese otro número a continiación: "))
+
+   alert(sumar(num1, num2))
+}
 
  /// Ejercicio 3: Par o lmpar 
  // Escribe un programa que determine si un número ingresado por el usuario es par o impar.
