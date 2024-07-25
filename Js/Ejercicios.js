@@ -60,7 +60,7 @@ const hallarFactorial = () => {
    let num_ = parseInt(prompt("ingrese un número a continiación: "))
     
    const result = factorial(num_);
-   console.log(`El Factorial de 5 es: ${result}`);
+   console.log(`El Factorial de ${num_} es: ${result}`);
 }
  
  /// Ejercicio 6: Contar vocales en una cadena 
