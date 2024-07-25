@@ -18,6 +18,16 @@ const realizaSuma = () => {
  /// Ejercicio 3: Par o lmpar 
  // Escribe un programa que determine si un número ingresado por el usuario es par o impar.
 
+const determinarNumeroPar = () => {
+   const esPar = (numero) => numero % 2 === 0
+   const numero = parseInt(prompt("ingrese el número para comprobar si es Par o Impar: "))
+
+   if (esPar(numero))
+      alert("El numero "+ numero + " es par.")
+   
+   alert("El numero "+ numero + " es impar.")
+} 
+
  /// Ejercicio 4: Máximo de tres números 
  // Escribe un programa que solicite al usuario tres números y determine cuál es el mayor.
 
