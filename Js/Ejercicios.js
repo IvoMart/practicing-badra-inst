@@ -50,6 +50,18 @@ const hallarMaximo = () => {
  /// Ejercicio 5: Factorial de un número 
  // Escribe un programa que calcule el factorial de un número ingresado por el usuario.
 
+const hallarFactorial = () => {
+   const factorial = (num) => {
+      if (num === 0 || num === 1) {
+        return 1;
+      }
+      return num * factorial(num - 1);
+    }
+   let num_ = parseInt(prompt("ingrese un número a continiación: "))
+    
+   const result = factorial(num_);
+   console.log(`El Factorial de 5 es: ${result}`);
+}
  
  /// Ejercicio 6: Contar vocales en una cadena 
  // Escribe un programa que cuente el número de vocales en una cadena ingresada por el usuario.
