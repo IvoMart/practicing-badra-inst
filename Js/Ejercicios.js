@@ -107,6 +107,28 @@ const numerosPrimos = () => {
  /// Ejercicio 8: Serie de Fibonacci 
  // Escribe un programa que genere la serie de Fibonacci hasta un número n ingresado por el usuario.
  
+const verFibonacci = () => {
+   
+   const serieFibonacciHastaValor = (max) => {
+      if (max < 0) return [];
+      
+      const fibonacci = [0, 1];
+      
+      while (true) {
+         const siguiente = fibonacci[fibonacci.length - 1] + fibonacci[fibonacci.length - 2];
+         if (siguiente > max) break;
+         fibonacci.push(siguiente);
+      }
+      
+      return fibonacci;
+   }
+
+   let numEntero = parseInt(prompt("ingrese un número para generar serie Fibonacci 'F(n)=F(n−1)+F(n−2)': "))
+
+   console.log(`La serie fibonacci generada hasta n = ${numEntero} es: \r\t ${serieFibonacciHastaValor(numEntero)}`)
+
+}
+
  /// Ejercicio 9: Invertir una cadena 
  // Escribe un programa que invierta una cadena de texto ingresada por el usuario.
  
