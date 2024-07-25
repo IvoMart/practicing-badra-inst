@@ -144,3 +144,13 @@ const textoInvertido = () => {
 
  /// Ejercicio 10: Suma de dígitos 
  // Escribe un programa que sume los dígitos de un número entero ingresado por el usuario.
+
+const digitosNumeroEntero = () => {
+   const contarDigitos = (numero) => {
+      return numero.toString().length
+   }
+
+   let numEntero = parseInt(prompt("ingrese un número entero a continiación: "))
+   
+   alert(`El numero ingresado ${numEntero} tiene ${contarDigitos(numEntero)} digitos.`)
+}
