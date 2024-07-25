@@ -88,6 +88,22 @@ const contarVocales = () => {
  /// Ejercicio 7: Numeros primos 
  // Escribe un programa que determine si un número ingresado por el usuario es primo.
  
+const numerosPrimos = () => {
+   const esPrimo = (numero) => {
+      if (numero <= 1) return false;
+      for (let i = 2; i <= numero / 2; i++) {
+         if (numero % i === 0) return false;
+      }
+      return true;
+   }
+
+   let numEntero = parseInt(prompt("ingrese un número para determinar si es número primo: "))
+
+   esPrimo(numEntero) ?
+      console.log(`El número ${numEntero} es número primo.`) :
+      console.log(`El número ${numEntero} no es número primo.`)
+}
+
  /// Ejercicio 8: Serie de Fibonacci 
  // Escribe un programa que genere la serie de Fibonacci hasta un número n ingresado por el usuario.
  
