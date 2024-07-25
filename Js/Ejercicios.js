@@ -31,6 +31,22 @@ const determinarNumeroPar = () => {
  /// Ejercicio 4: Máximo de tres números 
  // Escribe un programa que solicite al usuario tres números y determine cuál es el mayor.
 
+const hallarMaximo = () => {
+   alert("Hallaremos el valor máximo de tres números ingresados.")
+   let num1 = parseInt(prompt("ingrese el primer número a continiación: "))
+   let num2 = parseInt(prompt("ingrese otro número a continiación: "))
+   let num3 = parseInt(prompt("ingrese el último número a continiación: "))
+   const max = (num1, num2, num3 ) => {
+      if(num1 < num2) {
+         if (num2 < num3)
+            return num3
+         return num2
+      }
+      return num1
+   }
+   alert(max(num1, num2, num3))
+}
+
  /// Ejercicio 5: Factorial de un número 
  // Escribe un programa que calcule el factorial de un número ingresado por el usuario.
 
