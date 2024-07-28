@@ -35,6 +35,14 @@ function contarParesImpares(vector) {
 }
 
 
+function contarParesImpares2(vector) {
+    let res = {resultado: {}}
+    res.resultado.pares = 0
+    res.resultado.impares = 0
+    vector.map((num) => num % 2 == 0 ? res.resultado.pares++ : res.resultado.impares++ )
+    return res;
+}
+
 /**
  * Explicación:
  * Crea una función llamada contarParesImpares que reciba un vector de números
@@ -104,6 +112,7 @@ console.log('1. Suma de vectores:', sumarVectores2(vector1, [8,8,8]));
 // Ejemplo del Ejercicio 2: Contar Elementos Pares e Impares
 let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 console.log('2. Conteo de pares e impares:', contarParesImpares(numeros));
+console.log('2. Conteo de pares e impares:', contarParesImpares2(numeros));
 
 // Ejemplo del Ejercicio 3: Ordenar Nombres
 
