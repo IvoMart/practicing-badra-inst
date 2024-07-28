@@ -162,6 +162,11 @@ console.log('\n--- Ejercicio 5: Unión de Conjuntos ---');
 // Pon tu código aquí
 
 function unionConjuntos(conjunto1, conjunto2) {
+    if (!(conjunto1 instanceof Set) || !(conjunto2 instanceof Set)) {
+        console.error('Error: Ambos parámetros deben ser conjuntos (Set).');
+        return new Set();
+    }
+    
     let union = new Set(conjunto1);
 
     for (let elem of conjunto2) {
@@ -172,6 +177,11 @@ function unionConjuntos(conjunto1, conjunto2) {
 }
 
 function unionConjuntos2(conjunto1, conjunto2) {
+    if (!(conjunto1 instanceof Set) || !(conjunto2 instanceof Set)) {
+        console.error('Error: Ambos parámetros deben ser conjuntos (Set).');
+        return new Set();
+    }
+
     return new Set([...conjunto1, ...conjunto2]);
 }
 
