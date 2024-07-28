@@ -72,7 +72,12 @@ console.log('\n--- Ejercicio 4: Calcular Producto ---');
 // Pon tu código aquí
 
 function calcularProducto(vector) {
-    // Implementa tu solución aquí
+    let producto = 1;
+    for (let i = 0; i < vector.length; i++) {
+        producto *= vector[i];
+    }
+    
+    return producto;
 }
 
 
