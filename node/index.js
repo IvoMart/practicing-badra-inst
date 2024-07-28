@@ -56,7 +56,7 @@ console.log('\n--- Ejercicio 3: Ordenar Nombres ---');
 // Pon tu código aquí
 
 function ordenarNombres(nombres) {
-    // Implementa tu solución aquí
+    return nombres.slice().sort();
 }
 
 
