@@ -2,11 +2,28 @@
 console.log('--- Ejercicio 1: Suma de Vectores ---');
 
 function sumarVectores(vector1, vector2) {
+    if (!Array.isArray(vector1)) {
+        console.error('Error: El primer parámetro proporcionado debe ser un array.');
+        return [];
+    }
+    if (!Array.isArray(vector2)) {
+        console.error('Error: El segundo parámetro proporcionado debe ser un array.');
+        return [];
+    }
     let resultado = vector1.map((num, index) => num + vector2[index])
     return resultado
 }
 
 function sumarVectores2(vector1, vector2){
+    if (!Array.isArray(vector1)) {
+        console.error('Error: El primer parámetro proporcionado debe ser un array.');
+        return [];
+    }
+    if (!Array.isArray(vector2)) {
+        console.error('Error: El segundo parámetro proporcionado debe ser un array.');
+        return [];
+    }
+
     let resultado = []
     
     for (let i = 0; i < vector1.length; i++) {
