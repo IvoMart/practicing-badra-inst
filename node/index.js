@@ -97,7 +97,13 @@ console.log('\n--- Ejercicio 5: Unión de Conjuntos ---');
 // Pon tu código aquí
 
 function unionConjuntos(conjunto1, conjunto2) {
-    // Implementa tu solución aquí
+    let union = new Set(conjunto1);
+
+    for (let elem of conjunto2) {
+        union.add(elem);
+    }
+
+    return union;
 }
 
 
