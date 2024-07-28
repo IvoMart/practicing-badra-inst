@@ -109,6 +109,20 @@ console.log('\n--- Ejercicio 4: Calcular Producto ---');
 // Pon tu código aquí
 
 function calcularProducto(vector) {
+    if (!Array.isArray(vector)) {
+        console.error('Error: El parámetro proporcionado debe ser un array.');
+        return [];
+    }
+    
+    if (!vector.every(numero => typeof numero === 'number' && !isNaN(numero))) {
+        console.error('Error: Todos los elementos del array deben ser números.');
+        return [];
+    }
+    
+    if (vector.length === 0) {
+        return 0;
+    }
+    
     let producto = 1;
     for (let i = 0; i < vector.length; i++) {
         producto *= vector[i];
@@ -118,6 +132,20 @@ function calcularProducto(vector) {
 }
 
 function calcularProducto2(vector) {
+    if (!Array.isArray(vector)) {
+        console.error('Error: El parámetro proporcionado debe ser un array.');
+        return [];
+    }
+    
+    if (!vector.every(numero => typeof numero === 'number' && !isNaN(numero))) {
+        console.error('Error: Todos los elementos del array deben ser números.');
+        return [];
+    }
+    
+    if (vector.length === 0) {
+        return 0;
+    }
+    
     return vector.reduce((producto, numero) => producto * numero, 1);
 }
 
