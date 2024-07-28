@@ -80,6 +80,9 @@ function calcularProducto(vector) {
     return producto;
 }
 
+function calcularProducto2(vector) {
+    return vector.reduce((producto, numero) => producto * numero, 1);
+}
 
 /**
  * Explicación:
@@ -127,6 +130,7 @@ console.log('3. Nombres ordenados:', ordenarNombres(nombres));
 // Ejemplo del Ejercicio 4: Calcular Producto
 let vector3 = [2, 3, 4];
 console.log('4. Producto de elementos:', calcularProducto(vector3));
+console.log('4. Producto de elementos:', calcularProducto2(vector3));
 
 // Ejemplo del Ejercicio 5: Unión de Conjuntos
 let conjunto1 = new Set([1, 2, 3]);
