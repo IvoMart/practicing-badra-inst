@@ -106,6 +106,9 @@ function unionConjuntos(conjunto1, conjunto2) {
     return union;
 }
 
+function unionConjuntos2(conjunto1, conjunto2) {
+    return new Set([...conjunto1, ...conjunto2]);
+}
 
 /**
  * Explicación:
@@ -142,3 +145,4 @@ console.log('4. Producto de elementos:', calcularProducto2(vector3));
 let conjunto1 = new Set([1, 2, 3]);
 let conjunto2 = new Set([3, 4, 5]);
 console.log('5. Unión de conjuntos:', unionConjuntos(conjunto1, conjunto2));
+console.log('5. Unión de conjuntos:', unionConjuntos2(conjunto1, conjunto2));
