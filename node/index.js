@@ -2,8 +2,17 @@
 console.log('--- Ejercicio 1: Suma de Vectores ---');
 
 function sumarVectores(vector1, vector2) {
-    // Implementa tu solución aquí
+    let resultado = vector1.map((num, index) => num + vector2[index])
+    return resultado
+}
+
+function sumarVectores2(vector1, vector2){
+    let resultado = []
     
+    for (let i = 0; i < vector1.length; i++) {
+        resultado.push(vector1[i] + vector2[i])
+    }
+    return resultado
 }
 
 
@@ -86,6 +95,7 @@ console.log('\n--- Ejemplos de Uso ---');
 let vector1 = [1, 2, 3];
 let vector2 = [4, 5, 6];
 console.log('1. Suma de vectores:', sumarVectores(vector1, vector2));
+console.log('1. Suma de vectores:', sumarVectores2(vector1, [8,8,8]));
 
 // Ejemplo del Ejercicio 2: Contar Elementos Pares e Impares
 let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9];
