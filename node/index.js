@@ -44,6 +44,11 @@ function sumarVectores2(vector1, vector2){
 console.log('\n--- Ejercicio 2: Contar Elementos Pares e Impares ---');
 
 function contarParesImpares(vector) {
+    if (!Array.isArray(vector)) {
+        console.error('Error: El parámetro proporcionado debe ser un array.');
+        return [];
+    }
+
     let resultado = {}
     resultado.pares = 0
     resultado.impares = 0
@@ -53,6 +58,11 @@ function contarParesImpares(vector) {
 
 
 function contarParesImpares2(vector) {
+    if (!Array.isArray(vector)) {
+        console.error('Error: El parámetro proporcionado debe ser un array.');
+        return [];
+    }
+
     let res = {resultado: {}}
     res.resultado.pares = 0
     res.resultado.impares = 0
