@@ -83,6 +83,16 @@ console.log('\n--- Ejercicio 3: Ordenar Nombres ---');
 // Pon tu código aquí
 
 function ordenarNombres(nombres) {
+    if (!Array.isArray(nombres)) {
+        console.error('Error: El parámetro proporcionado debe ser un array.');
+        return [];
+    }
+
+    if (!nombres.every(nombre => typeof nombre === 'string')) {
+        console.error('Error: Todos los elementos del array deben ser strings.');
+        return [];
+    }
+
     return nombres.slice().sort();
 }
 
