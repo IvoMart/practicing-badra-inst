@@ -27,7 +27,11 @@ function sumarVectores2(vector1, vector2){
 console.log('\n--- Ejercicio 2: Contar Elementos Pares e Impares ---');
 
 function contarParesImpares(vector) {
-    // Implementa tu solución aquí
+    let resultado = {}
+    resultado.pares = 0
+    resultado.impares = 0
+    vector.map((num) => num % 2 == 0 ? resultado.pares++ : resultado.impares++ )
+    return resultado;
 }
 
 
